@@ -1,0 +1,16 @@
+/*
+Theme Name: Abrahams Sammenbragte Børn
+Theme URI: http://abrahams.dk
+Description: A theme built for the culture festival, Abrahams Connected Children i Odense, Denmark.
+Author: Mallebroks hævnere
+Author URI: http://mallebrok.dk
+Version: 1.0
+Tags: responsive, blue, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap.min.css');
+@import url('assets/style/main.css');
