@@ -1,9 +1,13 @@
-<?php get_header(); ?>
+<!--Dette er temaets archive fil. Det er denne, som er udgangspunktet for præsentation af de enkelte kategorisider.-->
+<?php
+//Wordpress funktion som henter headeren fra filen header.php og linker de nødvendige filer.
+get_header(); ?>
+<!--Her præsenteres titlen på den kategori, som siden viser gennem en Wordpress funktion.-->
 <h1><?php single_cat_title()?></h1>
 <div class="row">
 <?php  
+// Her hentes indlæg fra databasen, og sorteres efter feltet "dato"
 $category = get_the_category();
-// get posts
 $posts = get_posts(array(
 	'post_type'			=> 'post',
 	'posts_per_page'	=> -1,
@@ -19,8 +23,11 @@ if( $posts ): ?>
     $date = get_field('dato');
 ?>
 
-<?php if (date(Ymd) <= $date): ?>
+<?php 
+// Denne betingelse sikrer at der kun vises indlæg, hvis dato ikke er overskredet. Reelt betyder det at begivenhder som er overstået ikke vises.
+if (date(Ymd) <= $date): ?>
 
+<!--Selve præsentationen af det enkelte indlæg.-->
                <style>
                    div#top-<?php the_ID();?> {
                        background-image: url(<?php the_post_thumbnail_url( 'medium' );?>);
@@ -39,7 +46,7 @@ if( $posts ): ?>
 
     <?php else: ?>
     <?php endif; ?>
-    
+<!--Hvis der ikke er nogle relevante indlæg vises dette.-->
 <?php endwhile; else: ?>
 	<p><?php _e('Her sker der en hel masse og niks. Prøv en anden gang kammerat bladfjeder.'); ?></p>
 </div>
@@ -48,4 +55,6 @@ if( $posts ): ?>
 <?php else: ?>
 <?php endif; ?>
 
-<?php get_footer(); ?>
+<?php
+//Wordpress funktion som henter footeren fra filen footer.php og linker de nødvendige filer.
+get_footer(); ?>

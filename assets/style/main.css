@@ -1,162 +1,147 @@
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
     background: url("../img/farvem%C3%B8nster.jpg") center center repeat-y;
     background-repeat: repeat;
 }
-
-a,h1,h2,h3,h4 {
+.delay,
+#prikker,
+#sammenbragteborn,
+#logo,
+#logo_tekst {
+    opacity: 0;
+}
+;
+a,
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none !important;
-    
 }
 a {
     text-decoration: none !important;
     color: #323232 !important;
 }
-
 a:hover {
     text-decoration: none !important;
     color: #323232 !important;
 }
-
 p {
     font-family: 'Open Sans', sans-serif;
 }
 .trans {
-    background-color: rgba(248, 249, 250, 0.8); 
+    background-color: rgba(248, 249, 250, 0.8);
 }
-
 img#logo {
     width: 200px;
 }
-
 #wrapper {
-  padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
-
 #wrapper.toggled {
-  padding-left: 250px;
+    padding-left: 250px;
 }
-
 #sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  left: 250px;
-  width: 0;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #fff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     border-right: 0px solid black;
-    
 }
-
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+    width: 250px;
     border-right: 2px solid black;
 }
-
 #page-content-wrapper {
-  width: 100%;
-  position: absolute;
-  padding: 15px;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
-
 #wrapper.toggled #page-content-wrapper {
-  position: absolute;
-  margin-right: -250px;
+    position: absolute;
+    margin-right: -250px;
 }
-
 
 /* Sidebar Styles */
 
 .sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-
 .sidebar-nav li {
     line-height: 40px;
     list-style: none;
 }
-
 .sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: gray;
+    display: block;
+    text-decoration: none;
+    color: gray;
 }
-
 .sidebar-nav li a:hover {
-  text-decoration: none;
-  color: black;
-  background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: black;
+    background: rgba(255, 255, 255, 0.2);
 }
-
-.sidebar-nav li a:active, .sidebar-nav li a:focus {
-  text-decoration: none;
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
 }
-
 .sidebar-nav>.sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px;
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
 }
-
 .sidebar-nav>.sidebar-brand a {
-  color: gray;
+    color: gray;
 }
-
 .sidebar-nav>.sidebar-brand a:hover {
-  color: black;
-  background: none;
-    
+    color: black;
+    background: none;
 }
-
 footer {
     background-color: white;
-    
 }
-
 .card-img-top img {
     width: 100%;
     height: 100%;
     position: relative;
 }
-
 #colorblock {
     background-color: #e0685b;
 }
-
 .text-overlay a {
     color: #e0685b !important;
     font-size: 30px;
-    position:absolute;
-    top:50%;
-    left:50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
     margin: 0;
-    text-align:center;
+    text-align: center;
 }
-
 #colorblock .text-overlay a {
-    color: white !important; 
+    color: white !important;
 }
-
 .text-overlay a:hover {
     text-decoration: none;
     color: white !important;
@@ -174,92 +159,85 @@ h4.card-title a:hover {
 }
 */
 
+
 /* Kontakt Form */
 
 .container form {
-  
-  color: #888888;
-  text-align: left;
-  padding-top: 20px;
+    color: #888888;
+    text-align: left;
+    padding-top: 20px;
 }
-
 .container label {
-  display: none;
+    display: none;
 }
-
 .container input,
 .container textarea {
-  /* to create space for placing icon*/
-  padding-left: 32px;
-  border-color: dimgray;
-  background-color: #fff;
-  border-radius: 0px;
+    /* to create space for placing icon*/
+    padding-left: 32px;
+    border-color: dimgray;
+    background-color: #fff;
+    border-radius: 0px;
 }
-
 .container .btn-default {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  padding: 15px 36px;
-  background-color: white;
-  border-radius: 3px;
-  border: 1px solid black;
-  
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 15px 36px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid black;
 }
-
 .container .btn-default:hover,
 .container .btn-default:focus {
-  background-color: black;
-  color: #F1F1F1;
-  border-color: transparent;
-  outline: 0px auto -webkit-focus-ring-color;
+    background-color: black;
+    color: #F1F1F1;
+    border-color: transparent;
+    outline: 0px auto -webkit-focus-ring-color;
 }
 
 /*position should be relative and z-index greater than one*/
+
 .container .icon {
-  position: relative;
-  float: left;
-  margin-left: 8px;
-  margin-top: -24px;
-  z-index: 2;
-  color: #222222;
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    margin-top: -24px;
+    z-index: 2;
+    color: #222222;
 }
-
 .container .icon-textarea {
-  float: left;
-  margin-left: 8px;
-  margin-top: -104px;
-  position: relative;
-  z-index: 2;
-  color: #222222;
+    float: left;
+    margin-left: 8px;
+    margin-top: -104px;
+    position: relative;
+    z-index: 2;
+    color: #222222;
 }
-
 .card-img-top {
     height: 200px;
     background-position: center;
 }
+
 /* /Kontakt form */
 
 @media(min-width:768px) {
-  #wrapper {
-    padding-left: 0;
-  }
-  #wrapper.toggled {
-    padding-left: 250px;
-  }
-  #sidebar-wrapper {
-    width: 0;
-  }
-  #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-  }
-  #page-content-wrapper {
-    padding: 20px;
-    position: relative;
-  }
-  #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
-  }
+    #wrapper {
+        padding-left: 0;
+    }
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+    #sidebar-wrapper {
+        width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
 }
-
-
