@@ -42,20 +42,24 @@ if( $posts ): ?>
                 if ($_GET["time"] == NULL):?>
 
                 <style>
-                .col-12 {
+                    .col-12 {
                         height: 85vh;
                     }
                     
                     #svg {
                         margin-left: auto;
                         margin-right: auto;
-                        margin-top: auto;
-                        margin-bottom: auto;
                         position: relative;
                         display: block;
-                        width: 50%;
+                        width: 60%;
                     }
-                }
+                    
+                    @media(max-width:768px) {
+                        #svg {
+                            top: 20%;
+                            width: 80%;
+                        }
+                    }
 
                 </style>
                 <div class="col-12">
@@ -582,9 +586,7 @@ if( $posts ): ?>
                                                             <?php else: ?>
                                                                 <?php endif; ?>
 
-
-                                                                    <?php 
-    if ($_GET["time"] == NULL):?>
+                                                                    <?php if ($_GET["time"] == NULL):?>
 
                                                                         <style>
                                                                             div#top-<?php the_ID();

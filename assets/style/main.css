@@ -8,7 +8,18 @@ body {
 #sammenbragteborn,
 #logo,
 #logo_tekst {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 5-7 */
+    filter: alpha(opacity=0);
+    /* Netscape */
+    -moz-opacity: 0;
+    /* Safari 1.x */
+    -khtml-opacity: 0;
+    /* Good browsers */
     opacity: 0;
+}
+
 }
 ;
 a,
@@ -79,7 +90,6 @@ img#logo {
 }
 
 /* Sidebar Styles */
-
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -159,9 +169,7 @@ h4.card-title a:hover {
 }
 */
 
-
 /* Kontakt Form */
-
 .container form {
     color: #888888;
     text-align: left;
@@ -173,6 +181,7 @@ h4.card-title a:hover {
 .container input,
 .container textarea {
     /* to create space for placing icon*/
+    
     padding-left: 32px;
     border-color: dimgray;
     background-color: #fff;
@@ -195,7 +204,6 @@ h4.card-title a:hover {
 }
 
 /*position should be relative and z-index greater than one*/
-
 .container .icon {
     position: relative;
     float: left;
@@ -218,7 +226,6 @@ h4.card-title a:hover {
 }
 
 /* /Kontakt form */
-
 @media(min-width:768px) {
     #wrapper {
         padding-left: 0;
