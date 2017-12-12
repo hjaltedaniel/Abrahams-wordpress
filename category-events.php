@@ -6,12 +6,13 @@ get_header(); ?>
     <h1>Events</h1>
     <div class="card-deck deck mb-5">
         <?php 
-    //Denne funktion henter underkategorierne i et array, og præsenterer dem én efter én.
+                
+    //Her vises listen over kategorier, som hentes som element af kategorien "2".
     $categories = get_categories( array( 'child_of' => 2 ) );
     foreach ( $categories as $category ) {
             echo '<div class="card"><div class="card-img-top">';
             echo the_category_thumbnail([$category->term_id]);
-            echo '</div><div class="card-block"><div class="card-img-overlay"><a href="' . $category->category_nicename . '"><h4 class="card-title text-overlay">';
+            echo '</div><div class="card-block"><div class="card-img-overlay"><a href="/' . $category->category_nicename . '"><h4 class="card-title text-overlay-first">';
             echo $category->cat_name;
             echo '</a></div></div></div>';
     }?>
@@ -54,7 +55,7 @@ get_header(); ?>
         //Her hentes indlæg og sorteres efter feltet dato.
             $posts = get_posts(array(
 	           'post_type'			=> 'post',
-	           'posts_per_page'	=> -11,
+	           'posts_per_page'	=> -1,
 	           'meta_key'			=> 'dato',
 	           'orderby'			=> 'dato',
 	           'order'				=> 'ASC'

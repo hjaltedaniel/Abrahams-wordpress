@@ -5,7 +5,7 @@ anime({
     opacity: [
         {
             value: 0,
-            duration: 1000
+            duration: 500
         },
         {
             value: 1,
@@ -19,7 +19,7 @@ anime({
     translateX: [
         {
             value: -2500,
-            duration: 1500
+            duration: 100
         },
         {
             value: 1,

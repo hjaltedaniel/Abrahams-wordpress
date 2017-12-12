@@ -44,7 +44,7 @@ p {
 .trans {
     background-color: rgba(248, 249, 250, 0.8);
 }
-img#logo {
+img#toplogo {
     width: 200px;
 }
 #wrapper {
@@ -136,12 +136,15 @@ footer {
     height: 100%;
     position: relative;
 }
+.card-img-overlay {
+    background-color: rgba(51, 51, 51, 0.4);
+}
 #colorblock {
     background-color: #e0685b;
 }
-.text-overlay a {
-    color: #e0685b !important;
-    font-size: 30px;
+.text-overlay-first a {
+    color: #ffff !important;
+    font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -149,12 +152,23 @@ footer {
     margin: 0;
     text-align: center;
 }
-#colorblock .text-overlay a {
+.text-overlay a {
     color: white !important;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    text-align: center;
 }
 .text-overlay a:hover {
     text-decoration: none;
-    color: white !important;
+    color: #323232 !important;
+}
+.text-overlay-first a:hover {
+    text-decoration: none;
+    color: #e0685b !important;
 }
 
 /*
