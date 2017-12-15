@@ -128,6 +128,9 @@ img#toplogo {
     color: black;
     background: none;
 }
+.btn-light {
+    border-color: black;
+}
 footer {
     background-color: white;
 }
