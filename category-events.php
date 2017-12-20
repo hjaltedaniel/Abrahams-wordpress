@@ -12,7 +12,7 @@ get_header(); ?>
     foreach ( $categories as $category ) {
             echo '<div class="card"><div class="card-img-top">';
             echo the_category_thumbnail([$category->term_id]);
-            echo '</div><div class="card-block"><div class="card-img-overlay"><a href="/' . $category->category_nicename . '"><h4 class="card-title text-overlay-first">';
+            echo '</div><div class="card-block"><div class="card-img-overlay"><a href="category/events/' . $category->category_nicename . '"><h4 class="card-title text-overlay-first">';
             echo $category->cat_name;
             echo '</a></div></div></div>';
     }?>
